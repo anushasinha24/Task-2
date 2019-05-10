@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<title>Add New Details</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-tagsinput.css">
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+	<script src="bootstrap-tagsinput.min.js"></script>
+	<script src="adddetails.js"></script>
+</head>
+
+<body>
+	<center>
+	<form name="updateskillsform" id="updateskillsform" method="post" action="">
+		<br><h1>ENTER DETAILS</h1><br>
+		<p id="message"></p><br><br>
+		<input type="text" name="uid" id="uid" class="uid" placeholder="Enter User ID"/>&nbsp;&nbsp;
+		<input type="text" name="name" id="name" placeholder="Enter Name"/><br><br>
+		<input type="email" name="email" id="email" placeholder="Enter Email"/>&nbsp;&nbsp;
+		<input type="tel" name="mobile" id="mobile" placeholder="Enter Mobile"/><br><br>
+		<input type="date" name="DOB" id="DOB" placeholder="Enter DOB"/>&nbsp;&nbsp;
+		<input type="text" name="university" id="university" placeholder="Enter University Name"/><br><br>
+		<input type="text" name="company" id="company" placeholder="Enter Company Name"/>&nbsp;&nbsp;
+		<input type="tel" name="landline" id="landline" placeholder="Enter Landline Number"/><br><br>
+		<textarea name="address" id="address" placeholder="Enter Your Address"></textarea><br><br>
+		<input type="text" name="skill" id="skill" value="" placeholder="Enter Skills" data-role="tagsinput"/><br><br>
+		<input type="button" class="submit" value="Submit">
+	</form>
+	<input type="button" onclick="window.location.href='displaydetails.html'" value="Display Details"/>
+	</center>
+</body>
+
+</html>
